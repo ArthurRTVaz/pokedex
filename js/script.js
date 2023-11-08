@@ -29,7 +29,7 @@ const renderPokemon = async (pokemon) => {
         pokemonName.innerHTML = data.name;
         pokemonNumber.innerHTML = data.id;
         pokemonType.innerHTML = data.types[0].type.name + (data.types[1] ? ', ' + data.types[1].type.name : '');
-        pokemonImage.src = `https:/raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${Number(data.id)}.gif`;
+        pokemonImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${Number(data.id)}.gif`;
 
         input.value = '';
         searchPokemon = data.id;
